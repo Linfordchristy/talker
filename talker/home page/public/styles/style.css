@@ -1,0 +1,75 @@
+body{
+    height: 100%;
+    min-height: 100vh;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 10px;
+  }
+  
+  .gradient-background {
+    background: linear-gradient(300deg,#f1ecec,#6c6ce9);
+    background-size: 120% 120%;
+    animation: gradient-animation 12s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  /* these part are in the header but are used in the home page */
+  .logoPart{
+    height:45%;
+  }
+  #logo{
+    height: 40%;
+    width: 50%;
+    
+  }
+  .desData{
+    position: relative;
+    right: 10%;
+    font-size: medium;
+  }
+
+  /* these are the styles in home page */
+  
+ .midBlock{
+    background-image: url("https://www.gettyimages.com/photos/sunset");
+
+ }
+ .bodie{
+  background-image: url(public/images/bg2.png);
+  left: 100px;
+}
+  /* these styles are for the blogger */
+  .blogger{
+    height: 100vh;
+  }
+  .formIn{
+    height: 40vh;
+  }
+ /* these styles are used in contact page */
+  .icon{
+    height: 30px;
+    width:30px;
+    margin-right:5px ;
+  }
+
+  /* these styles are for the footer */
+  .footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }

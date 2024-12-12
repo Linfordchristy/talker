@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>login page</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+	<div class="cons">
+		<div class="log">
+			<div class="login ">
+			<form>
+				<h1>Login</h1>
+				<label class="form-label" for="name">User name</label>
+				<input class="form-control" type="text" name="name">
+				<label class="form-label" for="pass">Password</label>
+				<input class="form-control" type="password" name="pass">
+			</form>
+			<button class="mt-3 btn btn-primary sub" >Submit</button>
+		    </div>
+		    <div class="des">
+			    <h1>Hello, friend</h1>
+			    <p>To start your journey with us please register if you don't have an account by click below</p>
+			    <button class="btn btn-light" id="regger">Register</button>
+		    </div>
+		</div>
+		<div class="reg non">
+			<div class="des">
+			    <h1>Welcome back</h1>
+			    <p>To continue your journey with us please login if you already have an account</p>
+			    <button class="btn btn-light" id="logger">Login</button>
+		    </div>
+		    <div class="login">
+			  <form>
+			  	<h1>Register</h1>
+				<label class="form-label" for="uname">User name</label>
+				<input class="form-control" type="text" name="uname">
+				<label class="form-label" for="email">E-Mail</label>
+				<input class="form-control" type="email" name="email">
+				<label class="form-label" for="passw">Password</label>
+				<input class="form-control" type="password" name="passw">
+				<label class="form-label" for="cpassw">Confirm password</label>
+				<input class="form-control" type="password" name="cpassw">
+			  </form>
+			  <button class="mt-3 btn btn-primary sub" >Submit</button>
+		    </div>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

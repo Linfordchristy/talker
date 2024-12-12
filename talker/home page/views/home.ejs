@@ -1,0 +1,28 @@
+<div class="midBlock">
+<%- include("partials/header.ejs") %>
+<% if (blogTitles.length != 0) { %>
+    <div class="my-2 bodie">
+    <h1 class="p-2">Welcome <%= userName %> , Your Blogs</h1>
+    <% for( let j = 0; j < blogTitles.length; j++ ) { %>
+        <div class="d-flex justify-content-start p-4">
+            <div class="border-bottom pb-3">
+                <h2 class="pb-3"><%= blogTitles[j] %></h2>
+                <p><%= blogData[blogTitles[j]] %></p>
+            </div>
+        </div>
+    <% } %>
+    </div>
+<% } else { %>
+    <div class="d-flex justify-content-center mt-4 pt-3">
+        <div class="flex-column py-3">
+            <h2 style="text-align: center;">Welcome  <%= userName %>  </h2>
+            <h1>no blogs are created yet</h1>
+            <a href="/blogger">
+                <button class="btn btn-primary" style="width: 100%;">To create a new blog click here</button>
+            </a>
+        </div>
+    </div>
+<% } %>
+
+<%- include("partials/footer.ejs") %>
+</div>

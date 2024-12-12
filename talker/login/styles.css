@@ -1,0 +1,60 @@
+.log{
+	position: absolute;
+	top: 50%; right: 50%;
+    transform: translate(50%,-50%);
+	align-items: center;
+	box-shadow: 0px 8px 16px;
+	display: flex;
+	justify-content: center;
+	border-radius: 10px;
+	transition: 0.5s;
+}
+.reg{
+	position: absolute;
+	top: 50%; right: 50%;
+    transform: translate(50%,-50%);
+	align-items: center;
+	box-shadow: 0px 8px 16px;
+	display: flex;
+	justify-content: center;
+	border-radius: 10px;
+	transition: 0.5s;
+}
+.login{
+	width: 400px;
+	padding: 20px;
+	height: 55vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.des{
+	width: 400px;
+	height: 55vh;
+	padding: 20px;
+	color: white;
+	background: linear-gradient(109.6deg, rgb(6, 2, 2) 32.4%, rgb(137, 30, 47) 98.8%);
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+h1,p{
+	text-align: center;
+}
+form{
+	display: flex;
+	flex-direction: column;
+}
+.sub{
+	width: 100px;
+	border-radius: 50px;
+
+}
+.non{
+	opacity: 0;
+	z-index: -1;
+	transition: 0.5s ease-out;
+}

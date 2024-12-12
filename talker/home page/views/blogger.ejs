@@ -1,0 +1,14 @@
+<%- include("partials/header.ejs") %>
+
+<div class="blogger form-group ">
+    <form class="form " action="/blogs" method="post">
+        <div class="container d-flex flex-column justify-content-between py-3 ">
+            <input class="form-control blogForm lg my-2 py-3 rounded" type="text" name="title" placeholder="Enter the title of your blog">
+            <input class="form-control blogForm formIn lg my-2 py-3 rounded" type="text" name="blogEnteredData" placeholder="write your blog here">
+            <input class="btn btn-primary blogForm bg-primary rounded lg my-2 py-3" type="submit">
+        </div>
+    </form>
+    
+</div>
+
+<%- include("partials/footer.ejs") %>

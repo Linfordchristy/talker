@@ -1,0 +1,10 @@
+<%- include("partials/header.ejs") %>
+
+<% if (locals.title) { %>
+    <div class="container-fluid d-flex justify-content-centre flex-column  my-4" style="text-align: center;">
+        <h1><%= title %></h1>
+        <p><%= blogData[title] %></p>
+    </div>
+<% } %>
+
+<%- include("partials/footer.ejs") %>

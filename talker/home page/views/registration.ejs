@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="styles/login.css">
+</head>
+<body class="gradient-background">
+    <div class="cont">
+        <form action="/homes" method="post">
+            <h2>User Registration</h2>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm_password" placeholder="Confirm your password" required>
+            
+            <button type="submit" class="sub">Register</button>
+
+            <div id="linkk">
+                <% if (checker=="uname_N_avail") { %>
+                    <p style="color: red;">username is already in use </p>
+                <% } else if (checker=="pass_mismatch") { %>
+                    <p style="color: red;">both of the passwords doesn't match </p>
+                <% } %>
+                <p>already have a account ? <a href="/">click here</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
